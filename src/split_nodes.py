@@ -16,6 +16,8 @@ def split_nodes_delimiter(old_nodes, delimiter, text_type):
         current_node = []
 
         for i, sentence in enumerate(splitted_lst):
+            if sentence == "":
+                continue
             if i %2 == 0:
                 current_node.append(TextNode(sentence, TextType.TEXT))
             else:
