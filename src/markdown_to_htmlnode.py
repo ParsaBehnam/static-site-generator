@@ -1,7 +1,7 @@
-from block_markdown import markdown_to_blocks, block_to_block_type, BlockType
-from htmlnode import HtmlNode, LeafNode, ParentNode
-from inline_markdown import text_to_textnode
-from textnode import TextNode, TextType, text_node_to_html_node
+from src.block_markdown import markdown_to_blocks, block_to_block_type, BlockType
+from src.htmlnode import HtmlNode, LeafNode, ParentNode
+from src.inline_markdown import text_to_textnode
+from src.textnode import TextNode, TextType, text_node_to_html_node
 
 def markdown_to_htmlnode(markdown): # converts md document into a HTMLnode containing child nodes
     blocks = markdown_to_blocks(markdown)

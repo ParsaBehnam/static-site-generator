@@ -1,5 +1,5 @@
-from textnode import TextType, TextNode
-from extract_markdown import extract_markdown_images, extract_markdown_links
+from src.textnode import TextType, TextNode
+from src.extract_markdown import extract_markdown_images, extract_markdown_links
 
 def split_nodes_delimiter(old_nodes, delimiter, text_type):
     if not old_nodes:

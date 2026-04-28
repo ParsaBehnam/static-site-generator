@@ -1,4 +1,4 @@
-from copystatic import copy_static
+from src.copystatic import copy_static
 
 static_dir = './static'
 public_dir = './public'
