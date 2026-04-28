@@ -12,6 +12,6 @@ def main():
       basepath = '/'
 
    copy_static(static_dir, docs_dir) 
-   generate_page('./content/', './template.html', './docs', '/')
+   generate_page('./content/', './template.html', './docs', basepath = '/')
 
 main()
