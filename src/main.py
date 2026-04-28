@@ -1,8 +1,9 @@
-from textnode import TextType
-from textnode import TextNode
+from copystatic import copy_static
+
+static_dir = './static'
+public_dir = './public'
 
 def main():
-    text_node = TextNode("sample_text", TextType.BOLD, 'www.boot.dev')
-    print(text_node)
+   copy_static(static_dir, public_dir) 
 
 main()
