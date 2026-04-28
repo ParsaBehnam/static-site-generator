@@ -6,6 +6,6 @@ public_dir = './public'
 
 def main():
    copy_static(static_dir, public_dir) 
-   generate_page('./content/index.md', './template.html', './public/index.html')
+   generate_page('./content/', './template.html', './public')
 
 main()
