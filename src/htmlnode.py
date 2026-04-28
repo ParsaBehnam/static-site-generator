@@ -26,7 +26,7 @@ class LeafNode(HtmlNode):
         super().__init__(tag, value, None, props)
         
     def to_html(self):
-        if not self.value:
+        if self.value is None:
             raise ValueError('text is missing')
         
         if not self.tag:
